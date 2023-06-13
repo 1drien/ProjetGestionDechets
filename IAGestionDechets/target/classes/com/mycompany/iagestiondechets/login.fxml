@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.iagestiondechets.MainController">
+   <children>
+      <Label layoutX="140.0" layoutY="166.0" text="E-mail">
+         <font>
+            <Font name="FreeSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="207.0" text="Password">
+         <font>
+            <Font name="FreeSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="79.0" prefHeight="31.0" prefWidth="114.0" text="LOGIN" textFill="#a80e0e">
+         <font>
+            <Font name="FreeSerif Bold" size="26.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="Registerlnk" layoutX="434.0" layoutY="345.0" onAction="#Register" text="Enregistrez-vous ici !">
+         <font>
+            <Font name="FreeSerif" size="17.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="231.0" layoutY="348.0" text="Si vous n'avez pas un compte :">
+         <font>
+            <Font name="FreeSerif" size="17.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="12.0" layoutY="351.0" text="About">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+      </Hyperlink>
+      <TextField layoutX="231.0" layoutY="160.0" prefHeight="25.0" prefWidth="215.0" />
+      <Button fx:id="Cancelbtn" layoutX="379.0" layoutY="269.0" mnemonicParsing="false" onAction="#switchToMain" text="Cancel">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Loginbtn" layoutX="232.0" layoutY="268.0" mnemonicParsing="false" onAction="#Dashboard" text="Login">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+      </Button>
+      <PasswordField layoutX="231.0" layoutY="205.0" prefHeight="25.0" prefWidth="215.0" />
+   </children>
+</AnchorPane>

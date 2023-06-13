@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.mycompany.iagestiondechets.UserdashboardController">
+   <children>
+      <VBox layoutX="21.0" layoutY="21.0" prefHeight="379.0" prefWidth="579.0" />
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="382.0" prefWidth="579.0">
+         <children>
+            <Label layoutX="9.0" layoutY="7.0" text="Welcome !">
+               <font>
+                  <Font name="FreeSerif" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="26.0" text="User" textFill="#912c14">
+               <font>
+                  <Font name="FreeSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="65.0" layoutY="136.0" mnemonicParsing="false" text="Déchets">
+               <font>
+                  <Font name="FreeSerif Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="65.0" layoutY="229.0" mnemonicParsing="false" text="Historique">
+               <font>
+                  <Font name="FreeSerif Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="65.0" layoutY="183.0" mnemonicParsing="false" text="Coupons">
+               <font>
+                  <Font name="FreeSerif Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="63.0" layoutY="279.0" mnemonicParsing="false" text="Modifier vos informations">
+               <font>
+                  <Font name="FreeSerif Bold" size="17.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="Loginlnk" layoutX="15.0" layoutY="345.0" onAction="#Login" text="Contact us">
+               <font>
+                  <Font name="FreeSerif Bold" size="13.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="38.0" layoutY="106.0" text="Catégories :" textFill="#9f1717">
+               <font>
+                  <Font name="FreeSerif" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="19.0" layoutY="17.0" text="Welcome !">
+         <font>
+            <Font name="FreeSerif" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="36.0" text="User" textFill="#912c14">
+         <font>
+            <Font name="FreeSerif Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="Dechetbtn" layoutX="75.0" layoutY="146.0" mnemonicParsing="false" onAction="#Strash" text="Déchets">
+         <font>
+            <Font name="FreeSerif Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="75.0" layoutY="239.0" mnemonicParsing="false" text="Historique">
+         <font>
+            <Font name="FreeSerif Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="75.0" layoutY="193.0" mnemonicParsing="false" text="Coupons">
+         <font>
+            <Font name="FreeSerif Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="73.0" layoutY="289.0" mnemonicParsing="false" text="Modifier vos informations">
+         <font>
+            <Font name="FreeSerif Bold" size="17.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="Loginlnk" layoutX="25.0" layoutY="355.0" onAction="#Login" text="Contact us">
+         <font>
+            <Font name="FreeSerif Bold" size="13.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="48.0" layoutY="116.0" text="Catégories :" textFill="#9f1717">
+         <font>
+            <Font name="FreeSerif" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="194.0" layoutY="53.0" text="E-Strash Dashboard" textFill="#761494">
+         <font>
+            <Font name="FreeSerif Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="234.0" layoutY="355.0" text="Vous avez : 0 pts  ">
+         <font>
+            <Font name="FreeSerif" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="376.0" text="Remise : 0 Euro  ">
+         <font>
+            <Font name="FreeSerif" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="376.0" text="Dernière mise à jour : 23/03/2023. ">
+         <font>
+            <Font name="FreeSerif" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="Quitterbtn" layoutX="494.0" layoutY="315.0" mnemonicParsing="false" onAction="#switchToMain" text="Quitter" textFill="#9a2e99">
+         <font>
+            <Font name="FreeSerif Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
